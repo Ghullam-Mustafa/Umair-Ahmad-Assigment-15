@@ -46,3 +46,16 @@ Toastify({
 function clearOutput() {
     document.getElementById('output').innerHTML = " ";
 }
+
+// ====================   output   ==================================
+function showOutput(element) {
+    document.getElementById('output').innerHTML = element
+}
+
+// ===================================================================================================================
+
+button1.onclick = function () {
+   var results =  XPathResult.innerHTML = window.location.href;
+console.log(results);
+showOutput(results)
+}
