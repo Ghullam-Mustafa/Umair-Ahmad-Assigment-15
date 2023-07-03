@@ -1,3 +1,5 @@
+var popupwindow;
+// ========================
 document.getElementById("clearOutput").onclick = function () {
     let outputBoxHtml = document.getElementById("output").innerHTML;
 
@@ -52,10 +54,58 @@ function showOutput(element) {
     document.getElementById('output').innerHTML = element
 }
 
-// ===================================================================================================================
+// ================================   button1    ===================================================
 
 button1.onclick = function () {
    var results =  XPathResult.innerHTML = window.location.href;
 console.log(results);
 showOutput(results)
+}
+
+// ===============================    button2 ========================================================
+
+
+button2.onclick = function () {
+    window.location.href = "https://www.google.com/ "
+}
+
+
+// ============================     button3    ======================================================
+
+button3.onclick = function () {
+    window.location.replace("https://www.google.com/")
+}
+
+// ==============================     button4    ============================================
+
+button4.onclick = function () {
+    popupwindow = window.open("",'mywindow','width=500,height = 400,left = 300 , top = 200');
+    // popupwindow.location.assign("https://www.techloset.com/")
+}
+
+// =================================    button5  ================================
+
+button5.onclick = function () {
+    popupwindow.document.write("<h1 >Hellow World</h1>")
+}
+
+// ===============================   button6   =========================================
+
+button6.onclick = function () {
+    popupwindow.location.assign("https://www.techloset.com/")
+}
+
+// ================================   button7   =================================
+
+button7.onclick = function () {
+    
+    setTimeout(() => {
+        popupwindow.close()
+    },1000)
+}
+
+// =================================  button8  ======================================
+
+button8.onclick = function () {
+    popupwindow.close()
 }
